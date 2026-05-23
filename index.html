@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>БОС — Български Облачни Системи</title>
+<meta name="description" content="БОС — AI инфраструктура за периферни изчисления и услуги." />
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#000;background:#fff;line-height:1.6;font-size:17px}
+  img{max-width:100%;height:auto;display:block}
+  section{padding:96px 24px}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1,h2{font-weight:700;line-height:1.15;letter-spacing:-.01em}
+  h1{font-size:clamp(2rem,5vw,3.75rem)}
+  h2{font-size:clamp(1.6rem,3.5vw,2.75rem);margin-bottom:24px}
+  p{font-size:1.0625rem;margin-bottom:1rem}
+  .eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:.8rem;font-weight:600;margin-bottom:20px;opacity:.85}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  @media(max-width:840px){.two{grid-template-columns:1fr;gap:32px}section{padding:64px 20px}}
+
+  /* 1. Hero */
+  .hero{min-height:92vh;display:flex;align-items:center;color:#fff;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),url('images/hero.webp') center/cover no-repeat}
+  .hero .wrap{max-width:1180px}
+  .hero h1{max-width:900px}
+
+  /* 2 White */
+  .s-white{background:#fff;color:#000}
+  /* 3 Black */
+  .s-black{background:#000;color:#fff;text-align:center}
+  .s-black .big{font-size:clamp(2.5rem,7vw,5rem);font-weight:800;margin-top:40px;letter-spacing:-.02em}
+  .s-black .body{max-width:880px;margin:0 auto}
+  /* 4 White */
+  /* 5 Black */
+  .s-dark{background:#000;color:#fff}
+  /* 6 White center */
+  .s-center{text-align:center}
+  .s-center .body{max-width:880px;margin:0 auto 24px}
+  .s-center .punch{font-size:clamp(1.5rem,3vw,2.25rem);font-weight:700;margin-top:40px;max-width:900px;margin-left:auto;margin-right:auto}
+  /* 7 White full image */
+  .full-img{margin-bottom:48px;border:1px solid #eee}
+  /* 8 CTA */
+  .cta{background:#000;color:#fff;text-align:center;padding:140px 24px}
+  .cta h2{margin:0}
+  .cta .small{margin-top:16px;opacity:.6;font-size:.95rem;letter-spacing:.15em;text-transform:uppercase}
+  /* 9 Footer */
+  footer{background:#000;color:#fff;border-top:1px solid #222;padding:32px 24px;text-align:center;font-size:.85rem;letter-spacing:.05em}
+
+  .order-img-left .img{order:-1}
+</style>
+</head>
+<body>
+
+<!-- 1 Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">ПРЕДСТАВЯМЕ ВИ БОС</div>
+    <h1>AI инфраструктура за периферни изчисления и услуги</h1>
+  </div>
+</section>
+
+<!-- 2 What it is -->
+<section class="s-white">
+  <div class="wrap two">
+    <div>
+      <h2>Какво е БОС?</h2>
+      <p>Български Облачни Системи е първият разпределен център за данни, който използва съществуваща инфраструктура и недоизползван енергиен капацитет, за да отговори на нарастващото търсене на изчисления с изкуствен интелект.</p>
+      <p>Той е проектиран да доставя мегавати нови изчисления за извод по-бързо и по-евтино от конвенционалните центрове за данни.</p>
+    </div>
+    <div class="img"><img src="images/infrastructure.webp" alt="БОС инфраструктура" /></div>
+  </div>
+</section>
+
+<!-- 3 Problem -->
+<section class="s-black">
+  <div class="wrap">
+    <h2>Проблемът</h2>
+    <p class="body">След десетилетия на слаб растеж, изкуственият интелект трансформира глобалното търсене на енергия с порядък. Търсенето на центрове за данни в САЩ и Европа може да достигне 150 GW до 2028 г., с прогнозиран недостиг от около 100 GW налична мощност. Дори ако изграждането на центрове за данни може да се справи с нарастващото търсене, пречката все още ще бъде инфраструктурата за доставка на енергия.</p>
+    <div class="big">100 GW глобален недостиг на изчисления</div>
+  </div>
+</section>
+
+<!-- 4 Solution -->
+<section class="s-white">
+  <div class="wrap two">
+    <div>
+      <h2>Решението</h2>
+      <p>Отключване на мощност — БОС преобразува недоизползвания капацитет за захранване „зад измервателния уред“ във висококачествени изчисления, като използва съществуващата инфраструктура, вместо да чака нови мащабни взаимовръзки и централизираното им изграждане.</p>
+    </div>
+    <div class="img"><img src="images/solution.webp" alt="Решение БОС" /></div>
+  </div>
+</section>
+
+<!-- 5 Applications -->
+<section class="s-dark">
+  <div class="wrap two order-img-left">
+    <div>
+      <h2>Приложения</h2>
+      <p>Чрез интеграцията на физическа инфраструктура и модерни изчислителни възможности, ние трансформираме локациите на нашите клиенти в стратегически Edge (периферни) дата центрове. Това отваря пътя за внедряване на високопроизводителни решения с изкуствен интелект в сектори като: финанси и банково дело; здравеопазване и болнична грижа; образование и публична администрация; ритейл, хотелиерство и корпоративни услуги, логистика, производство и строителни дейности.</p>
+    </div>
+    <div class="img"><img src="images/applications.webp" alt="Приложения на БОС" /></div>
+  </div>
+</section>
+
+<!-- 6 Node to fleet -->
+<section class="s-white s-center">
+  <div class="wrap">
+    <h2>От възел до флотилия</h2>
+    <p class="body">БОС МИНИ е специално разработен за лесен монтаж на открито или закрито. Всеки възел е проектиран да бъде самостоятелен, тих, модулен, лесен за обслужване и сигурен.</p>
+    <p class="body">БОС ОБЛАК е система от възли, които работят заедно като флотилия, координирана чрез БОС SOL (Secure Orchestration Layer). Така много независими възли могат да се държат като кохерентен облак, изпълнявайки AI inference работни натоварвания близо до крайните потребители, намалявайки латентността.</p>
+    <div class="punch">Това позволява на БОС Облак да координира капацитет в мегаватов мащаб.</div>
+  </div>
+</section>
+
+<!-- 7 Dual benefits -->
+<section class="s-black">
+  <div class="wrap">
+    <img class="full-img" src="images/benefits.webp" alt="Двойни предимства" />
+    <h2 style="text-align:center">Двойни предимства за домакините</h2>
+    <p class="body" style="max-width:980px;margin:0 auto">Мини центровете за данни с изкуствен интелект предлагат двойно предимство за предприятията и фирмите, които избират да станат колокатори. Първо, те получават директен достъп до локализирана инфраструктура с изкуствен интелект, което им позволява да изграждат и внедряват свои собствени приложения с изкуствен интелект с ниска латентност — от гласови агенти и компютърно зрение до автоматизация и частни работни натоварвания с изкуствен интелект — без да разчитат изцяло на централизирани доставчици на облачни услуги. Второ, те могат да монетизират неизползвания изчислителен капацитет, като позволяват на други клиенти да изпълняват работни натоварвания с изкуствен интелект на същата инфраструктура, като по този начин ефективно трансформират своите съоръжения в генериращи приходи центрове за изкуствен интелект, като същевременно максимизират използването на захранване, охлаждане и мрежови активи.</p>
+  </div>
+</section>
+
+<!-- 8 CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2>Свържете се с нас</h2>
+    <div class="small">скоро</div>
+  </div>
+</section>
+
+<!-- 9 Footer -->
+<footer>
+  © 2026 ВСИЧКИ ПРАВА ЗАПАЗЕНИ · Български Облачни Системи · bosbg.com
+</footer>
+
+</body>
+</html>
