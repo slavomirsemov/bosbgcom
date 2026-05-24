@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>БОС — Български Облачни Системи</title>
 <meta name="description" content="БОС — AI инфраструктура за периферни изчисления и услуги." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
@@ -20,8 +21,12 @@
   .two{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
   @media(max-width:840px){.two{grid-template-columns:1fr;gap:32px}section{padding:64px 20px}}
 
+  /* Site logo top-left */
+  .site-logo{position:absolute;top:24px;left:24px;z-index:10}
+  .site-logo img{height:44px;width:auto}
+
   /* 1. Hero */
-  .hero{min-height:92vh;display:flex;align-items:center;color:#fff;
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;
     background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),url('images/hero.webp') center/cover no-repeat}
   .hero .wrap{max-width:1180px}
   .hero h1{max-width:900px}
@@ -32,19 +37,25 @@
   .s-black{background:#000;color:#fff;text-align:center}
   .s-black .big{font-size:clamp(2.5rem,7vw,5rem);font-weight:800;margin-top:40px;letter-spacing:-.02em}
   .s-black .body{max-width:880px;margin:0 auto}
-  /* 4 White */
   /* 5 Black */
   .s-dark{background:#000;color:#fff}
   /* 6 White center */
   .s-center{text-align:center}
   .s-center .body{max-width:880px;margin:0 auto 24px}
   .s-center .punch{font-size:clamp(1.5rem,3vw,2.25rem);font-weight:700;margin-top:40px;max-width:900px;margin-left:auto;margin-right:auto}
-  /* 7 White full image */
-  .full-img{margin-bottom:48px;border:1px solid #eee}
-  /* 8 CTA */
-  .cta{background:#000;color:#fff;text-align:center;padding:140px 24px}
+
+  /* 7 Benefits list */
+  .benefit-list{list-style:none;padding:0;margin:40px auto 0;max-width:880px;text-align:left}
+  .benefit-list li{font-size:clamp(1.25rem,2.4vw,1.75rem);font-weight:700;padding:20px 0;border-top:1px solid #333;display:flex;gap:20px;align-items:baseline}
+  .benefit-list li:last-child{border-bottom:1px solid #333}
+  .benefit-list .num{opacity:.5;font-variant-numeric:tabular-nums}
+
+  /* 8 CTA with bg image */
+  .cta{position:relative;color:#fff;text-align:center;padding:160px 24px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),url('images/contact.webp') center/cover no-repeat}
   .cta h2{margin:0}
-  .cta .small{margin-top:16px;opacity:.6;font-size:.95rem;letter-spacing:.15em;text-transform:uppercase}
+  .cta .small{margin-top:16px;opacity:.7;font-size:.95rem;letter-spacing:.15em;text-transform:uppercase}
+  .cta .cta-logo{height:56px;width:auto;margin:0 auto 32px}
   /* 9 Footer */
   footer{background:#000;color:#fff;border-top:1px solid #222;padding:32px 24px;text-align:center;font-size:.85rem;letter-spacing:.05em}
 
@@ -55,6 +66,7 @@
 
 <!-- 1 Hero -->
 <section class="hero">
+  <a class="site-logo" href="#"><img src="images/logo.png" alt="БОС — Български Облачни Системи" /></a>
   <div class="wrap">
     <div class="eyebrow">ПРЕДСТАВЯМЕ ВИ БОС</div>
     <h1>AI инфраструктура за периферни изчисления и услуги</h1>
@@ -105,27 +117,34 @@
 </section>
 
 <!-- 6 Node to fleet -->
-<section class="s-white s-center">
-  <div class="wrap">
-    <h2>От възел до флотилия</h2>
-    <p class="body">БОС МИНИ е специално разработен за лесен монтаж на открито или закрито. Всеки възел е проектиран да бъде самостоятелен, тих, модулен, лесен за обслужване и сигурен.</p>
-    <p class="body">БОС ОБЛАК е система от възли, които работят заедно като флотилия, координирана чрез БОС SOL (Secure Orchestration Layer). Така много независими възли могат да се държат като кохерентен облак, изпълнявайки AI inference работни натоварвания близо до крайните потребители, намалявайки латентността.</p>
-    <div class="punch">Това позволява на БОС Облак да координира капацитет в мегаватов мащаб.</div>
+<section class="s-white">
+  <div class="wrap two">
+    <div>
+      <h2>От възел до флотилия</h2>
+      <p>БОС МИНИ е специално разработен за лесен монтаж на открито или закрито. Всеки възел е проектиран да бъде самостоятелен, тих, модулен, лесен за обслужване и сигурен.</p>
+      <p>БОС ОБЛАК е система от възли, които работят заедно като флотилия, координирана чрез БОС SOL (Secure Orchestration Layer). Така много независими възли могат да се държат като кохерентен облак, изпълнявайки AI inference работни натоварвания близо до крайните потребители, намалявайки латентността.</p>
+      <p style="font-weight:700;margin-top:16px">Това позволява на БОС Облак да координира капацитет в мегаватов мащаб.</p>
+    </div>
+    <div class="img"><img src="images/node-to-fleet.webp" alt="БОС от възел до флотилия" /></div>
   </div>
 </section>
 
-<!-- 7 Dual benefits -->
+<!-- 7 Dual benefits (text only) -->
 <section class="s-black">
   <div class="wrap">
-    <img class="full-img" src="images/benefits.webp" alt="Двойни предимства" />
-    <h2 style="text-align:center">Двойни предимства за домакините</h2>
-    <p class="body" style="max-width:980px;margin:0 auto">Мини центровете за данни с изкуствен интелект предлагат двойно предимство за предприятията и фирмите, които избират да станат колокатори. Първо, те получават директен достъп до локализирана инфраструктура с изкуствен интелект, което им позволява да изграждат и внедряват свои собствени приложения с изкуствен интелект с ниска латентност — от гласови агенти и компютърно зрение до автоматизация и частни работни натоварвания с изкуствен интелект — без да разчитат изцяло на централизирани доставчици на облачни услуги. Второ, те могат да монетизират неизползвания изчислителен капацитет, като позволяват на други клиенти да изпълняват работни натоварвания с изкуствен интелект на същата инфраструктура, като по този начин ефективно трансформират своите съоръжения в генериращи приходи центрове за изкуствен интелект, като същевременно максимизират използването на захранване, охлаждане и мрежови активи.</p>
+    <h2>Добавена стойност и предимства за пилотни клиенти</h2>
+    <p class="body">Мини AI центровете за данни предлагат двойна полза за бизнеса ви. От една страна, получавате достъп до периферна AI инфраструктура за бързо и сигурно внедряване на собствени приложения — като гласови агенти, компютърно зрение и автоматизация. От друга, можете да генерирате допълнителни приходи отдавайки неизползвания изчислителен капацитет на други предприятия нуждаещи се от AI натоварвания.</p>
+    <ol class="benefit-list">
+      <li><span class="num">01</span><span>Изградете свои собствени приложения с изкуствен интелект</span></li>
+      <li><span class="num">02</span><span>Монетизирайте излишния капацитет на изкуствения интелект</span></li>
+    </ol>
   </div>
 </section>
 
 <!-- 8 CTA -->
 <section class="cta">
   <div class="wrap">
+    <img class="cta-logo" src="images/logo.png" alt="БОС" />
     <h2>Свържете се с нас</h2>
     <div class="small">скоро</div>
   </div>
